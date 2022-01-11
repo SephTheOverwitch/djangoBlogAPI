@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
-    return ( 
+export const Navbar= (): JSX.Element => ( 
         <nav className="navbar">
             <h1>Most amazing blog ever</h1>
             <div className="links">
@@ -9,7 +8,4 @@ const Navbar = () => {
                 <Link to="/createPost">Create post</Link>
             </div>
         </nav>
-     );
-}
-
-export default Navbar;
+)
