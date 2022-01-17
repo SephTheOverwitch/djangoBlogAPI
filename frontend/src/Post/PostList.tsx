@@ -1,7 +1,13 @@
 import { PostModel } from '../models/PostModel';
 
-export const PostList = (posts: PostModel): JSX.Element => {
+interface IProps {
+    posts: PostModel[] | undefined
+}
+
+export const PostList = (props: IProps): JSX.Element => {
     return(
-        <label>posts.title</label>
+        <label>{props.posts?.map((post) => {
+            return post.title
+        })}</label>
     )
 }
