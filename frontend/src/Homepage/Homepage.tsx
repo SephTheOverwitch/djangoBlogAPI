@@ -20,7 +20,7 @@ export const Homepage = (): JSX.Element => {
     useEffect(() => {
         fetchPosts().then(setPosts)
         console.log(posts)
-    }, []) 
+    }, [posts]) 
 
     return ( 
         <>
