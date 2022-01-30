@@ -14,7 +14,7 @@ from rest_framework.views import Http404
 def getLatestPost(request):
 
     try:
-        post = Post.objects.order_by('created')[0]
+        post = Post.objects.order_by('-created')[0]
         serializer = PostSerializer(post, many=False)
         return Response(serializer.data)
     except Post.DoesNotExist:
