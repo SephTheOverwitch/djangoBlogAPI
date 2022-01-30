@@ -8,8 +8,9 @@ export const Navbar= (): JSX.Element => (
     <BooststrapNavbar.Toggle aria-controls="basic-navbar-nav" />
     <BooststrapNavbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="#link">New Post</Nav.Link>
+        <Nav.Link href="/">Home</Nav.Link>
+        <Nav.Link href="/create">New Post</Nav.Link>
+        <Nav.Link href="/posts">Post List</Nav.Link>
       </Nav>
     </BooststrapNavbar.Collapse>
   </Container>
