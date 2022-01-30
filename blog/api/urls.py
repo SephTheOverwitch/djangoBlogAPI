@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import getLatestPost
+from . import views
 from rest_framework.urlpatterns import format_suffix_patterns
 from api import views
 
@@ -8,7 +8,7 @@ urlpatterns = [
     path('users/<int:pk>/', views.UserDetail.as_view()),
     path('posts/', views.PostList.as_view()),
     path('posts/<int:pk>/', views.PostDetail.as_view()),
-    path('posts/latest', getLatestPost),
+    path('posts/latest', views.getLatestPost),
     path('comments/', views.CommentList.as_view()),
     path('comments/<int:pk>/', views.CommentDetail.as_view()),
 ]
