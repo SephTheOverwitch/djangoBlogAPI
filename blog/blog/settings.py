@@ -30,7 +30,10 @@ SECRET_KEY = '111'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG")
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = [
+    'localhost',
+    'https://simple-blog-django-playground.herokuapp.com/',
+    ]
 
 
 # Application definition
