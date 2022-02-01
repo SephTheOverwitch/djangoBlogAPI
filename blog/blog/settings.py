@@ -32,7 +32,7 @@ DEBUG = os.getenv("DEBUG")
 
 ALLOWED_HOSTS = [
     'localhost',
-    'https://simple-blog-django-playground.herokuapp.com/',
+    'simple-blog-django-playground.herokuapp.com',
     ]
 
 
