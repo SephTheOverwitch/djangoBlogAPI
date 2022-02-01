@@ -1,13 +1,10 @@
-import { UserModel } from "./UserModel";
-
 export class PostModel {
-    title: string | undefined;
-    body: string | undefined;
-    owner?: UserModel;
+  title: string | undefined;
+  body: string | undefined;
+  owner?: string | undefined;
 
-    constructor(title: string, body: string, owner?: UserModel) {
-        this.body = body
-        this.title = title
-        this.owner = owner
-    }
+  constructor(title: string, body: string) {
+    this.body = body;
+    this.title = title;
+  }
 }

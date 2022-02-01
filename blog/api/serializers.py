@@ -11,12 +11,9 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ['id', 'username', 'posts', 'comments']
 
 class PostSerializer(serializers.ModelSerializer):
-    owner = serializers.ReadOnlyField(source='owner.username')
-    comments = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
-
     class Meta:
         model = Post
-        fields = ['id', 'title', 'body', 'owner', 'comments']
+        fields = ['id', 'title', 'body']
 
 class CommentSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
