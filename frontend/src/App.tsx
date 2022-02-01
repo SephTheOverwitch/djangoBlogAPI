@@ -13,6 +13,6 @@ export const App = (): JSX.Element => (
         <Route path="/posts" element={<PostList />} />
         <Route path="/create" element={<CreatePost />} />
       </Routes>
-    </BrowserRouter>
-  </>
+    </BrowserRouter> 
+  </> 
 );
